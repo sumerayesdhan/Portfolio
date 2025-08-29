@@ -2,13 +2,12 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
-
+import erkalapai from "../../Assets/Projects/erkalapai.png";
+import sql from "../../Assets/Projects/sql.png";
+import apple from "../../Assets/Projects/apple.png";
+import skysense from "../../Assets/Projects/skysense.png";
+import blindstick from "../../Assets/Projects/blindstick.png";
+import nofoodwaste from "../../Assets/Projects/nofoodwaste.png";
 function Projects() {
   return (
     <Container fluid className="project-section">
@@ -17,76 +16,73 @@ function Projects() {
         <h1 className="project-heading">
           My Recent <strong className="purple">Works </strong>
         </h1>
-        <p style={{ color: "white" }}>
+        <p style={{ color: "var(--text-color)" }}>
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={erkalapai}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              title="Erkalapai"
+              description="A modern chat application built with React.js and Node.js, featuring real-time messaging, AI-powered responses using OpenAI API, user authentication, and responsive design. Includes features like message encryption, file sharing, and intelligent conversation suggestions."
+              ghLink="https://github.com/Sanjay-M1512/Erkalapai"
+              demoLink="https://erkalapai.vercel.app/"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={skysense}
+              isBlog={false}
+              title="SkySense"
+              description="SkySense helps you track live weather updates, analyze risks, and visualize data with ease. Stay informed and make smarter decisions with real-time insights."
+              ghLink="https://github.com/Atimanyu/sky-sense"
+              demoLink="https://s-k-y-s-e-n-s-e.netlify.app/"
+            />
+          </Col>
+          
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={sql}
+              isBlog={false}
+              title="SQL Database Management System"
+              description="A comprehensive database management system built with SQL, featuring advanced query optimization, data modeling, and real-time analytics. Includes features like automated backup systems, user authentication, role-based access control, and interactive dashboards for data visualization and reporting."
+              ghLink="https://github.com/Sanjay-M1512/NL-SQL"
+              demoLink="https://nl-sql-sanjay-m1512s-projects.vercel.app/"              
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={nofoodwaste}
+              isBlog={false}
+              title="Food Donation Hub"
+              description="A comprehensive food donation platform that connects donors with those in need, featuring both donor and admin dashboards with unified authentication."
+              ghLink="https://github.com/hyderabad25/Team-38"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={blindstick}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              title="Smart Blind Stick"
+              description="An innovative IoT-based smart blind stick designed to assist visually impaired individuals. Features include obstacle detection using ultrasonic sensors, GPS navigation, emergency alerts, and smartphone connectivity. Built with Arduino, Python, and mobile app integration for enhanced accessibility and safety."
+              ghLink="https://github.com/sumerayesdhan/smart-blind-stick"
+              demoLink="https://smart-blind-stick-demo.vercel.app/"
             />
           </Col>
-
-          <Col md={4} className="project-card">
+         
+           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={apple}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
+              title="Plant Disease Detection AI"
+              description="An intelligent plant disease detection system built with PyTorch and CNN architecture. Trained on Kaggle's plant disease dataset with 38 classes, achieving 98% accuracy using ResNet34 transfer learning. Features include real-time image classification, disease identification for 14 unique plant species, and a user-friendly web interface for farmers and gardeners."
+              
             />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={leaf}
-              isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={suicide}
-              isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={emotion}
-              isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
-            />
-          </Col>
+          </Col> 
+          
+          
         </Row>
       </Container>
     </Container>
