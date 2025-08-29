@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../Assets/avatar.svg";
+import myImg from "../../Assets/working-girl.svg";
 import Tilt from "react-parallax-tilt";
 import {
   AiFillGithub,
@@ -16,14 +16,14 @@ function Home2() {
         <Row>
           <Col md={8} className="home-about-description">
             <h1 style={{ fontSize: "2.6em" }}>
-              LET ME <span className="purple"> INTRODUCE </span> MYSELF
+              CRAFTING <span className="purple"> DIGITAL MAGIC </span> WITH CODE ✨
             </h1>
             <div className="home-about-body">
               <p>
                 I'm a <span className="purple">B.Tech</span> student specializing in
                 <span className="purple"> Artificial Intelligence</span> and
                 <span className="purple"> Data Science</span>, with a stellar academic record
-                (<span className="purple">CGPA: 9.58</span>). My passion lies at the intersection of
+                (<span className="purple">CGPA: 9.48</span>). My passion lies at the intersection of
                 technology and problem-solving—transforming complex data into intelligent
                 solutions that drive real-world impact.
               </p>
